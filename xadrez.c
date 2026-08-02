@@ -5,33 +5,29 @@ int main() {
 
     int i;
 
-    printf("====================================\n");
-    printf("       MOVIMENTOS NO XADREZ\n");
-    printf("====================================\n\n");
-
     // ==========================================
-    // RAINHA - Movimento: 5 casas para a direita
+    // MOVIMENTOS DA RAINHA
     // ==========================================
 
-    printf("RAINHA - Movimento para a direita:\n");
+    printf("Movimento da Rainha:\n");
 
     for (i = 1; i <= 5; i++) {
-        printf("Casa %d -> Direita\n", i);
+        printf("Direita\n");
     }
 
     printf("\n");
 
 
     // ==========================================
-    // TORRE -  Movimento: 5 casas na diagonal
+    // MOVIMENTOS DA TORRE
     // ==========================================
 
-    printf("TORRE - Movimento para a esquerda:\n");
+    printf("Movimento da Torre:\n");
 
     i = 1;
 
     while (i <= 5) {
-        printf("Casa %d -> Esquerda\n", i);
+        printf("Esquerda\n");
         i++;
     }
 
@@ -39,25 +35,48 @@ int main() {
 
 
     // ==========================================
-    // BISPO -  Movimento: 5 casas na diagonal
+    // MOVIMENTOS DO BISPO
     // ==========================================
 
-    printf("BISPO - Movimento na diagonal:\n");
+    printf("Movimento do Bispo:\n");
 
     i = 1;
 
     do {
-        printf("Casa %d -> Diagonal cima/direita\n", i);
+        printf("Cima\n");
         i++;
 
     } while (i <= 5);
 
+    printf("\n");
 
-    printf("\n====================================\n");
-    printf("        FIM DOS MOVIMENTOS\n");
-    printf("====================================\n");
+
+    // ==========================================
+    // MOVIMENTO DO CAVALO
+    // ==========================================
+
+    printf("Movimento do Cavalo:\n");
+
+    int baixo = 0;
+    int esquerda = 0;
+
+    for (i = 0; i < 1; i++) {
+
+        while (baixo < 2) {
+
+            printf("Baixo\n");
+
+            baixo++;
+        }
+
+        while (esquerda < 1) {
+
+            printf("Esquerda\n");
+
+            esquerda++;
+        }
+    }
 
     return 0;
 }
-
 
